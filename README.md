@@ -1,5 +1,6 @@
 # RANDOM NAME BOT
 **Simply generate random names with a discord bot**
+> $giveaname
 
 ## HOW TO USE
     sudo apt install git
