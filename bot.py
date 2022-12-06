@@ -3,7 +3,7 @@ import discord
 
 token = "YOUR DISCORD BOT TOKEN"
 
-client = discord.Client()
+client = commands.Bot(intents=discord.Intents.all() , command_prefix= "$" , description='Get a name!')
 
 @client.event
 async def on_ready():
@@ -14,7 +14,7 @@ async def on_message(message):
     if message.author == client.user:
         return
 
-    if message.content.startswith('$giveaname'):
+    if message.content.startswith('$givemeaname'):
         name = genname()
         await message.channel.send(name)
 
